@@ -1,0 +1,17 @@
+.portfolio {
+    background-color: var(--bg500);
+    padding-bottom: 7em;
+    .portfolio-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.875rem;
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3.5em;
+    }
+}

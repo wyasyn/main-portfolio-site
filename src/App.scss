@@ -1,0 +1,99 @@
+.App {
+    min-height: 100vh;
+    background-color: var(--bg400);
+    color: var(--clr-text);
+    font-size: 1.3rem;
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+
+
+.container {
+    padding: 0 1em;
+    width: 100%;
+
+    @media screen and (min-width:67rem) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    @media screen and (min-width:81rem) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+}
+
+.btn {
+    border: 1px solid var(--clr-heading);
+    padding: 0.6em 2.5em;
+    -webkit-border-radius: 3.5em;
+    -moz-border-radius: 3.5em;
+    -ms-border-radius: 3.5em;
+    -o-border-radius: 3.5em;
+    border-radius: 3.5em;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    &:hover {
+        background-color: var(--clr-heading);
+        color: var(--bg500);
+    }
+}
+.btn-secondary {
+    background-color: var(--clr-heading);
+    color: var(--bg500);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    &:hover {
+        color: var(--clr-heading);
+        background-color: var(--bg500);
+    }
+}
+.btn-primary {
+    background-color: var(--btn-clr);
+    color: var(--clr-heading);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border: none;
+    &:hover {
+        opacity: .75;
+    }
+}
+
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.fade-out {
+    -webkit-animation: fade-out 300ms ease-in-out forwards;
+    animation: fade-out 300ms ease-in-out forwards;
+}

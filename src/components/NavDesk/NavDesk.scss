@@ -1,0 +1,51 @@
+.n-desk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    height: 7.5rem;
+    .logo {
+        height: 4.1875rem;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 4.1875rem;
+            width: auto;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            -ms-transition: var(--transition);
+            -o-transition: var(--transition);
+            transition: var(--transition);
+            &:hover {
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                transform: scale(0.9);
+            }
+        }
+    }
+    .n-list-desk {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .n-link {
+            text-transform: uppercase;
+            -webkit-transition: var(--transition);
+            -moz-transition: var(--transition);
+            -ms-transition: var(--transition);
+            -o-transition: var(--transition);
+            transition: var(--transition);
+            &:hover,&:focus, &.active {
+                color: var(--primary);
+            }
+        }
+    }
+    @media screen and (max-width:61rem) {
+        display: none;
+    }
+}

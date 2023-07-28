@@ -1,0 +1,17 @@
+.services {
+    background-color: var(--bg500);
+    .service-content {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        padding-bottom: 7em;
+        gap: 2.6rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media screen and (max-width:61rem) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width:33rem) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

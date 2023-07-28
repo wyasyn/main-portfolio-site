@@ -1,0 +1,12 @@
+export {default as Navbar } from "./Navbar/Navbar";
+export {default as NavDesk } from "./NavDesk/NavDesk";
+export {default as NavMobile } from "./NavMobile/NavMobile";
+export {default as Hero } from "./Hero/Hero";
+export {default as Stats } from "./Stats/Stats";
+export {default as Header } from "./Header/Header";
+export {default as Service } from "./Service/Service";
+export {default as Skill } from "./Skill/Skill";
+export {default as ProjectLong } from "./ProjectLong/ProjectLong";
+export {default as ProjectShort } from "./ProjectShort/ProjectShort";
+export {default as ContactInfo } from "./ContactInfo/ContactInfo";
+export {default as Testimony } from "./Testimony/Testimony";

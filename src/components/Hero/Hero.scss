@@ -1,0 +1,94 @@
+.hero {
+    background: var(--bg500);
+    height: auto;
+    .hero-container {
+        display: flex;
+            flex-direction: row;
+            .left {
+                flex: 1;
+                align-self: center;
+                .content {
+                    .hero-heading {
+                        h3 {
+                            font-size: 1.8rem;
+                            color: var(--clr-text);
+                            font-weight: 500;
+                        }
+                        h1 {
+                            font-size: 5rem;
+                            margin: .1em 0;
+                            letter-spacing: 0.2rem;
+                            color: var(--clr-heading);
+                            line-height: 1.1;
+                        }
+                        .title {
+                            text-transform: uppercase;
+                        }
+                    }
+                    .cta {
+                        margin: 2em 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 1.2rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        @media screen and (max-width:39rem) {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                    .socials {
+                        display: flex;
+                        align-items: center;
+                        gap: 2.6rem;
+                        .social {
+                            height: 4rem;
+                            width: 4rem;
+                            border: 1px solid #4b5da9;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            border-radius: 50%;
+                            svg {
+                                color: #4b5da9;
+                                font-size: 1.4rem;
+                            }
+                            &:hover {
+                                border: none;
+                                background-color: var(--primary);
+                                svg {
+                                    color: var(--clr-heading);
+                                }
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width:48rem) {
+                    padding: 7em;
+                    justify-self: flex-start;
+                }
+            }
+            .right {
+                flex: 1;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                background-image: url(./blob.svg);
+                background-position:center;
+                background-repeat: no-repeat;
+                background-size: 120%;
+                @media screen and (max-width:48rem) {
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+            @media screen and (max-width:48rem) {
+                flex-direction: column;
+            }
+    }
+}

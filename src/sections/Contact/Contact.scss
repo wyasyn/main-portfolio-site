@@ -1,0 +1,81 @@
+.contact {
+    background-color: var(--bg500);
+    overflow: hidden;
+    .header {
+        margin-bottom: 20em;
+    }
+    .contact-container {
+        position: relative;
+        .contact-box {
+            width: 100%;
+            padding: 1.5em 5em;
+            position: absolute;
+            background-color: var(--bg400);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            left: 50%;
+            top: -17rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+            border-radius: 1rem;
+            z-index: 9;
+            .col-1 {
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                align-items: flex-start;
+                justify-content: center;
+                .inputs {
+                    background: transparent;
+                    border: 1px solid var(--clr-text);
+                    display: inline-block;
+                    width: 100%;
+                    padding: 1.125rem 1.875rem;
+                    -webkit-border-radius: 2em;
+                    -moz-border-radius: 2em;
+                    -ms-border-radius: 2em;
+                    -o-border-radius: 2em;
+                    border-radius: 2em;
+                    color: var(--clr-text);
+                    &:hover, &:focus, &:active {
+                        border-color: var(--clr-heading);
+                    }
+                }
+                .btn {
+                    cursor: pointer;
+                }
+                @media screen and (min-width:48rem) {
+                    flex-basis: 60%;
+                }
+            }
+            .col-2 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 1.25rem;
+                @media screen and (min-width:48rem) {
+                    flex-basis: 38%;
+                }
+            }
+            @media screen and (min-width:48rem) {
+                flex-direction: row;
+            }
+        }
+    }
+    .pic {
+        min-height: 41rem;
+        background-image: url(./app.jpg);
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
