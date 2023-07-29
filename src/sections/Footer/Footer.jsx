@@ -1,5 +1,5 @@
 import './Footer.scss'
-import {FaTwitter, FaGithub, FaLinkedin, FaCodepen, FaArrowCircleUp } from 'react-icons/fa'
+import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF, FaArrowCircleUp } from 'react-icons/fa'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
@@ -12,18 +12,18 @@ function Footer() {
             </small>
         </div>
         <div className="col-2">
-          <a href='/' className="social" title='LinkedIn'>
-              <FaLinkedin />
-            </a>
-            <a href='/' className="social" title='CodePen'>
-              <FaCodepen />
-            </a>
-            <a href='/' className="social" title='Twitter'>
-              <FaTwitter />
-            </a>
-            <a href='/' className="social" title='Github'>
-              <FaGithub />
-            </a>
+        <a href='https://www.linkedin.com/in/yasin-walum-01b18295/' className="social" title='LinkedIn' target='_blank' rel='noreferrer' >
+            <FaLinkedinIn />
+          </a>
+          <a href='https://www.facebook.com/ywalum' className="social" title='CodePen'  target='_blank' rel='noreferrer'>
+            <FaFacebookF />
+          </a>
+          <a href='https://twitter.com/wyasyn' className="social" title='Twitter'  target='_blank' rel='noreferrer'>
+            <FaTwitter />
+          </a>
+          <a href='https://github.com/wyasyn' className="social" title='Github'  target='_blank' rel='noreferrer'>
+            <FaGithub />
+          </a>
         </div>
       </div>
       <a  href='#home' className="back">

@@ -3,6 +3,9 @@
     overflow: hidden;
     .header {
         margin-bottom: 20em;
+         @media screen and (max-width:48rem) {
+                margin-bottom: 5em;
+            }
     }
     .contact-container {
         position: relative;
@@ -69,13 +72,17 @@
             @media screen and (min-width:48rem) {
                 flex-direction: row;
             }
+            @media screen and (max-width:48rem) {
+                position: static;
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+                top: 0;
+                left: 0;
+                margin-bottom: 5em;
+            }
         }
-    }
-    .pic {
-        min-height: 41rem;
-        background-image: url(./app.jpg);
-        background-position: center ;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
