@@ -1,10 +1,9 @@
 import './Header.scss'
-import {Navbar, Hero} from '../../components'
+import { Hero} from '../../components'
 
 function Header() {
   return (
-    <div id="home">
-      <Navbar />
+    <div id="home" className='home'>
       <Hero />
     </div>
   )

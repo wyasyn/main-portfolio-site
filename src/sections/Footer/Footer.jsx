@@ -1,5 +1,5 @@
 import './Footer.scss'
-import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF, FaArrowCircleUp } from 'react-icons/fa'
+import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF } from 'react-icons/fa'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
@@ -26,9 +26,6 @@ function Footer() {
           </a>
         </div>
       </div>
-      <a  href='#home' className="back">
-        <FaArrowCircleUp />
-      </a>
     </footer>
   )
 }
