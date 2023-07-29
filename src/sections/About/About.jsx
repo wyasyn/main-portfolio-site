@@ -2,6 +2,7 @@ import './About.scss'
 import {Header, Stats} from '../../components'
 import profile from '../../assets/about2.png'
 import { HiOutlineDownload } from 'react-icons/hi'
+import resume from '../../assets/resume.pdf'
 
 function About() {
   return (
@@ -25,7 +26,7 @@ function About() {
             <p>
               As a dedicated web developer, I strive to merge design aesthetics with functionality, crafting engaging and user-friendly websites. Whether you&apos;re seeking an expert in front-end development, back-end programming, or both, I am confident that my diverse skill set and innovative approach will captivate your interest. Join me on this journey as we explore the exciting world of web development together.
             </p>
-            <a href="../../assets/resume.pdf" className="btn btn-primary" download >Download CV <HiOutlineDownload /></a>
+            <a href={resume} className="btn btn-primary" download='resume' >Download CV <HiOutlineDownload /></a>
           </div>
         </div>
       </div>

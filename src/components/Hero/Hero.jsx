@@ -2,6 +2,8 @@ import './Hero.scss'
 import pic from '../../assets/profile.png'
 import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF} from 'react-icons/fa'
 import { HiOutlineDownload, HiMail } from 'react-icons/hi'
+import resume from '../../assets/resume.pdf'
+
 
 function Hero() {
   return (
@@ -22,7 +24,7 @@ function Hero() {
         </div>
         <div className="cta">
           <a href="#contact" className="btn btn-secondary">hire me <HiMail /></a>
-          <a href="../../assets/resume.pdf" className="btn" download >download cv <HiOutlineDownload /></a>
+          <a href={resume} className="btn" download='resume' >download cv <HiOutlineDownload /></a>
         </div>
         <div className="socials">
           <a href='https://www.linkedin.com/in/yasin-walum-01b18295/' className="social" title='LinkedIn' target='_blank' rel='noreferrer' >
