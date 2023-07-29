@@ -1,18 +1,20 @@
 import './NavMobile.scss'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import logo from '../../assets/logo-white-monkey.svg'
-import { useState } from 'react'
+import  { useState } from 'react'
 import {motion} from 'framer-motion'
 
 function NavMobile() {
 
   const [click, setClick]=useState(false)
 
+  click ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"
+
   const handleClick = () => {
-    setClick(true)
+    setClick(true);
   }
   const closeMenu = () => {
-    setClick(false)
+    setClick(false);
   }
 
 
