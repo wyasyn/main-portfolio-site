@@ -1,8 +1,8 @@
 .skill {
     position: relative;
     background-color: var(--clr-text);
-    width: 200px;
-    height: 240px;
+    width: 18rem;
+    height: 20rem;
     overflow: hidden;
      -webkit-border-radius: 2em 2em 0 2em;
     -moz-border-radius: 2em 2em 0 2em;
@@ -52,6 +52,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 1em;
         p {
             text-align: center;
         }

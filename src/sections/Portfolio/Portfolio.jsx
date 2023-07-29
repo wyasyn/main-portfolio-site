@@ -8,7 +8,7 @@ function Portfolio() {
       <Header
       sub='Portfolio'
       title='check my wonderful work'
-      description='works a head'
+      description=' I am excited to showcase my skills and share my journey as I continue to explore and innovate in the ever-evolving world of front-end development.'
        />
        <div className="portfolio-container container">
         <ProjectLong
@@ -45,7 +45,7 @@ function Portfolio() {
          />
        </div>
        <div className="button">
-        <a href="https://walumyas2.netlify.app" className="btn btn-secondary" target='_blank' rel='noreferrer'>See More</a>
+        <a href="https://www.walumyas.netlify.app/portfolio" className="btn btn-secondary" target='_blank' rel='noreferrer'>See More</a>
        </div>
     </div>
   )

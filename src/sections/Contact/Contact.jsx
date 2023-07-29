@@ -1,6 +1,7 @@
 import './Contact.scss'
 import {ContactInfo, Header} from '../../components'
-import { FaInstagram, FaLocationArrow, FaWhatsapp } from 'react-icons/fa'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { ImLocation2 } from 'react-icons/im'
 
 
 
@@ -8,7 +9,7 @@ function Contact() {
   const InfoData = [
     {
       title: 'Location',
-      icon: <FaLocationArrow />,
+      icon: <ImLocation2 />,
       describe:'Kyaliwajjala, Kampala, Uganda'
     },
     {
@@ -27,7 +28,7 @@ function Contact() {
       <Header
       sub='contact'
       title='get in touch with me'
-      description='coming soon'
+      description="I'm always looking for new ways to help people. If you have a question or need help, please don't hesitate to contact me."
        />
        <div className="contact-container container">
         <div className="contact-box">

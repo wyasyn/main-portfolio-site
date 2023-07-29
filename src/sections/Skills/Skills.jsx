@@ -1,6 +1,6 @@
 import './Skills.scss'
 import {Header, Skill} from '../../components'
-import { FaReact, FaJava } from 'react-icons/fa'
+import { FaReact, FaGithub } from 'react-icons/fa'
 import { GiPencilBrush } from 'react-icons/gi'
 import { GrCss3 } from 'react-icons/gr'
 
@@ -9,22 +9,22 @@ function Skills() {
     {
       icon: <FaReact />,
       name:'React',
-      overlay:'great at react'
+      overlay:'Interactivity and dynamic elements, DOM manipulation, event handling & AJAX'
     },
     {
       icon: <GiPencilBrush />,
       name:'Design',
-      overlay:'great at react'
+      overlay:'Photoshop, Illustrator, Figma, Adobe XD and others'
     },
     {
       icon: <GrCss3 />,
       name:'Responsiveness',
-      overlay:'great at react'
+      overlay:'Websites look and function well on various devices and screen sizes'
     },
     {
-      icon: <FaJava />,
-      name:'Programming',
-      overlay:'great at react'
+      icon: <FaGithub />,
+      name:'Version Control',
+      overlay:'collaborate with other developers, track changes, and manage code efficiently using Git & Github'
     },
   ]
   return (
@@ -32,7 +32,7 @@ function Skills() {
       <Header
       sub='Skills'
       title='Why choose me'
-      description='the reason to choose me'
+      description='I thrive on transforming ideas and designs into interactive and user-friendly web experiences. From responsive layouts to intuitive user interfaces, I take pride in crafting seamless, visually appealing, and engaging websites.'
        />
        <div className="skills-content">
         {

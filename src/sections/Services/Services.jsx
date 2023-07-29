@@ -1,26 +1,36 @@
 import './Services.scss'
 import {Header, Service} from '../../components'
-import {GiSmartphone, GiMouse } from 'react-icons/gi'
+import { GiMouse } from 'react-icons/gi'
+import {BsPeopleFill, BsSearch } from 'react-icons/bs'
 import {LuMonitorSmartphone } from 'react-icons/lu'
 import {MdComputer } from 'react-icons/md'
+import {BiRefresh } from 'react-icons/bi'
 
 function Services() {
   const ServicesData = [
     {
       icon: <MdComputer />,
-      title:'Web Development'
+      title:'Website Development'
     },
     {
       icon: <LuMonitorSmartphone />,
-      title:'Web Design'
+      title:'UI / UX'
     },
     {
-      icon: <GiSmartphone />,
-      title:'App Development'
+      icon: <BsPeopleFill />,
+      title:'Consultation & Collaboration'
+    },
+    {
+      icon: <BsSearch />,
+      title:'SEO'
     },
     {
       icon: <GiMouse />,
-      title:'SEO'
+      title:'Web Animation'
+    },
+    {
+      icon: <BiRefresh />,
+      title:'Code Maintenance & Updates'
     },
   ]
   return (
@@ -28,7 +38,7 @@ function Services() {
       <Header
       sub='service'
       title='what i do'
-      description='the following are my services'
+      description='I am passionate about crafting captivating digital experiences that leave a lasting impression. With a keen eye for design and a deep understanding of the latest web technologies.'
        />
 
        <div className="service-content container">

@@ -1,6 +1,6 @@
 import './Hero.scss'
 import pic from '../../assets/profile.png'
-import {FaTwitter, FaGithub, FaLinkedin, FaCodepen} from 'react-icons/fa'
+import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF} from 'react-icons/fa'
 import { HiOutlineDownload, HiMail } from 'react-icons/hi'
 
 function Hero() {
@@ -25,16 +25,16 @@ function Hero() {
           <a href="../../assets/resume.pdf" className="btn" download >download cv <HiOutlineDownload /></a>
         </div>
         <div className="socials">
-          <a href='/' className="social" title='LinkedIn'>
-            <FaLinkedin />
+          <a href='https://www.linkedin.com/in/yasin-walum-01b18295/' className="social" title='LinkedIn' target='_blank' rel='noreferrer' >
+            <FaLinkedinIn />
           </a>
-          <a href='/' className="social" title='CodePen'>
-            <FaCodepen />
+          <a href='https://www.facebook.com/ywalum' className="social" title='CodePen'  target='_blank' rel='noreferrer'>
+            <FaFacebookF />
           </a>
-          <a href='/' className="social" title='Twitter'>
+          <a href='https://twitter.com/wyasyn' className="social" title='Twitter'  target='_blank' rel='noreferrer'>
             <FaTwitter />
           </a>
-          <a href='/' className="social" title='Github'>
+          <a href='https://github.com/wyasyn' className="social" title='Github'  target='_blank' rel='noreferrer'>
             <FaGithub />
           </a>
         </div>
