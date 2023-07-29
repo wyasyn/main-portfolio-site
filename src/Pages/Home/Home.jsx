@@ -1,11 +1,9 @@
 import './Home.scss'
 import { About, Contact, Footer, Header, Portfolio, Services, Skills, Testimonials } from '../../sections'
-import { Navbar } from '../../components'
 
 function Home() {
   return (
-    <>
-    <Navbar />
+    <main className='main'>
     <Header />
     <About />
     <Services />
@@ -14,7 +12,7 @@ function Home() {
     <Testimonials />
     <Contact />
     <Footer />
-    </>
+    </main >
   )
 }
 
