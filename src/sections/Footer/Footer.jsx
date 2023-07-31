@@ -1,5 +1,6 @@
 import './Footer.scss'
 import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF } from 'react-icons/fa'
+import logo from '../../assets/logo-white-monkey.svg'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
@@ -7,8 +8,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container container">
         <div className="col-1">
+        <a href="#" className='logo'>
+          <img src={logo} alt="logo" />
+        </a>
             <small>
-              &copy; {currentYear} All Rights Reserved.
+              &copy; {currentYear} Yasin Walum.
             </small>
         </div>
         <div className="col-2">

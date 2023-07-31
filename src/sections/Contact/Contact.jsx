@@ -1,11 +1,18 @@
 import './Contact.scss'
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import {ContactInfo, Header} from '../../components'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { ImLocation2 } from 'react-icons/im'
+import {TiTick} from 'react-icons/ti'
+import {RxCross2} from 'react-icons/rx'
 
 
 
 function Contact() {
+
+  const [success, setSuccess] = useState(false)
+  const [fail, setFail] = useState(false)
   const InfoData = [
     {
       title: 'Location',
@@ -23,6 +30,23 @@ function Contact() {
       describe:'@yasynwlm'
     },
   ]
+  const form = useRef();
+ 
+        const sendEmail = (e) => {
+
+          e.preventDefault();
+
+          emailjs.sendForm('service_89hfvwr', 'template_5cqh2ye', form.current, 'EAwUbmHikNYNpY6xC')
+            .then((result) => {
+                console.log(result.text);
+                e.target.reset();
+                setSuccess(true)
+            }, (error) => {
+                console.log(error.text);
+                setFail(true)
+            });
+        };
+
   return (
     <div id="contact" className="contact">
       <Header
@@ -32,15 +56,59 @@ function Contact() {
        />
        <div className="contact-container container">
         <div className="contact-box">
-          <form className="col-1" action="https://formsubmit.co/6a1e2edb56ea14755490a5969a7a4f51" method="POST" >
+          <form className="col-1" ref={form} onSubmit={sendEmail} >
             <h2>
               Say Something
             </h2>
-            <input className='inputs'  type="text" name="name" id="name" placeholder='Name' />
-            <input className='inputs'  type="email" name="email" id="email" placeholder='Email' />
-            <textarea  className='inputs' name="message" id="message" rows="4" placeholder='Message' ></textarea>
+            <input 
+            className='inputs'  
+            type="text" 
+            name="name" 
+            id="name" 
+            placeholder='Name'
+            />
+            <input  
+            className='inputs'  
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder='Email' />
+
+            <textarea
+            className='inputs' 
+            name="message" 
+            id="message" rows="4" 
+            placeholder='Message' ></textarea>
             <input className='btn btn-primary' type="submit" value="SEND MESSAGE" />
           </form>
+          {
+            success && <div className='message'>
+              <div className="tick">
+                <TiTick />
+              </div>
+              <h3>Thank You!</h3>
+              <p>
+              Your submission has been sent.
+              </p>
+              <button className='ok' onClick={()=>{setSuccess(false)}}>
+                OK
+              </button>
+            </div>
+          }
+          {
+            fail && <div className='message2'>
+              <div className="tick">
+                <RxCross2 />
+              </div>
+              <h3>Sorry!</h3>
+              <p>
+              Message not sent
+              </p>
+              <button className='ok' onClick={()=>{setFail(false)}}>
+                OK
+              </button>
+            </div>
+          }
           <div className="col-2">
             {
               InfoData.map((data, index)=>(
