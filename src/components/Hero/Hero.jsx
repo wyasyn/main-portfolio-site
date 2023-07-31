@@ -43,7 +43,7 @@ function Hero() {
        </div>
       </div>
       <div className="right">
-        <img src={pic} alt="profile" />
+        <img src={pic} alt="profile" title='Yasin Walum' />
       </div>
       </div>
     </div>
