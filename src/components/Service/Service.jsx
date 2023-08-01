@@ -16,7 +16,7 @@ function Service({icon, title}) {
 
 Service.propTypes = {
     title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
+    icon: PropTypes.any.isRequired,
   };
 
 export default Service

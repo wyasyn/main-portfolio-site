@@ -19,7 +19,7 @@ function ContactInfo({icon, title, describe}) {
 
 ContactInfo.propTypes = {
     title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
+    icon: PropTypes.any.isRequired,
     describe: PropTypes.string.isRequired,
   };
 

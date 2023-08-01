@@ -21,7 +21,7 @@ function Skill({icon, name, overlay}) {
 
 Skill.propTypes = {
   name: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.any.isRequired,
   overlay: PropTypes.string.isRequired,
 };
 
