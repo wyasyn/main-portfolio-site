@@ -17,7 +17,7 @@ function About() {
         <div className="about-content">
           <div className="col-1">
             <div className="pic">
-              <img src={profile} alt="pic" title='Yasin Walum' />
+              <img src={profile} alt="pic" title='Yasin Walum' loading='lazy' />
             </div>
           </div>
           <div className="col-2">
