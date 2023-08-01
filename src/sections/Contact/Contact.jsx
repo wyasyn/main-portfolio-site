@@ -38,13 +38,13 @@ function Contact() {
 
           emailjs.sendForm('service_89hfvwr', 'template_5cqh2ye', form.current, 'EAwUbmHikNYNpY6xC')
             .then(() => {
-                // console.log(result.text);
-                e.target.reset();
-                setSuccess(true)
-            }, () => {
-                // console.log(error.text);
-                setFail(true)
-            });
+              e.target.reset();
+              setSuccess(true)
+            }
+            )
+            .catch(()=>{
+              setFail(true)
+            })
         };
 
   return (
