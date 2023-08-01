@@ -37,12 +37,12 @@ function Contact() {
           e.preventDefault();
 
           emailjs.sendForm('service_89hfvwr', 'template_5cqh2ye', form.current, 'EAwUbmHikNYNpY6xC')
-            .then((result) => {
-                console.log(result.text);
+            .then(() => {
+                // console.log(result.text);
                 e.target.reset();
                 setSuccess(true)
-            }, (error) => {
-                console.log(error.text);
+            }, () => {
+                // console.log(error.text);
                 setFail(true)
             });
         };
