@@ -23,6 +23,7 @@ function App() {
         <div className="loading">
           <div className="icon">
             <img src={logo} alt="logo" />
+            <h3>Yasin Walum</h3>
           </div>
           <div className="load">
               <img src={loadee} alt="loadee" />
