@@ -1,5 +1,5 @@
 import './Home.scss'
-import { About, Contact, Footer, Header, Portfolio, Services, Skills, Testimonials } from '../../sections'
+import { About, Contact, Header, Portfolio, Services, Skills, Testimonials } from '../../sections'
 
 function Home() {
   return (
@@ -11,7 +11,6 @@ function Home() {
     <Portfolio />
     <Testimonials />
     <Contact />
-    <Footer />
     </main >
   )
 }

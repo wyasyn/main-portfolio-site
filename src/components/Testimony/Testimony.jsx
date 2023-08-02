@@ -5,7 +5,7 @@ function Testimony({name, photo, title, comment}) {
   return (
     <div className="testimony">
         <div className="pic">
-            <img src={photo} alt="testimony" />
+            <img src={photo} alt="testimony" loading='lazy' />
         </div>
         <div className="name">
             <p className='comment'>{comment}</p>

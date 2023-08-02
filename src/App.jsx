@@ -1,42 +1,18 @@
 import './App.scss'
 import { Home } from './Pages'
 import { ArrowUp, Navbar } from './components'
-import { useState, useEffect } from "react";
-import logo from './assets/logo-white-monkey.svg'
-import loadee from './assets/loader.gif'
+import { Footer } from './sections'
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    window.addEventListener("load", () => {
-      setLoading(false);
-    });
-  }, []);
-
   return (
     <>
-    {
-      loading ?
-      <div className="loader">
-        <div className="loading">
-          <div className="icon">
-            <img src={logo} alt="logo" />
-            <h3>Yasin Walum</h3>
-          </div>
-          <div className="load">
-              <img src={loadee} alt="loadee" />
-          </div>
-        </div>
-      </div>
-      :
       <div className="App">
       <Navbar />
       <Home />
       <ArrowUp />
+      <Footer />
     </div>
-    }
     </>
   )
 }
