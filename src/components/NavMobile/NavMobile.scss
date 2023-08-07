@@ -75,7 +75,6 @@
         opacity: 0;
         .n-link {
             text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
             &:hover, &.active, &:focus {
                 color: var(--primary);
             }
