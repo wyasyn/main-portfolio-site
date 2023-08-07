@@ -2,4 +2,11 @@
     width: 100%;
     box-shadow: 0 0 5px #000;
     height: 7.5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    background: rgba( var(--bg400),0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }

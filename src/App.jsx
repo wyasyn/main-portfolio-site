@@ -1,6 +1,6 @@
 import './App.scss'
 import { Home } from './Pages'
-import { ArrowUp, Navbar } from './components'
+import { Navbar } from './components'
 import { Footer } from './sections'
 
 function App() {
@@ -10,7 +10,6 @@ function App() {
       <div className="App">
       <Navbar />
       <Home />
-      <ArrowUp />
       <Footer />
     </div>
     </>
