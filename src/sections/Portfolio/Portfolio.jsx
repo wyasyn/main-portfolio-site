@@ -14,38 +14,38 @@ function Portfolio() {
         <ProjectLong
         url1='https://yasyn.netlify.app'
         image1={images.project1}
-        title1='Project 1'
+        title1='Personal Portfolio'
         url2='https://blogr256.netlify.app/'
         image2={images.project2}
-        title2='Rahstudio Website'
+        title2='Blogr Landing Page'
          />
         <ProjectShort
         url1='https://loopstudio256.netlify.app/'
         image1={images.project3}
-        title1='Project 3'
+        title1='Loop Studio'
         url2='https://cerulean-scone-e8159c.netlify.app/'
         image2={images.project4}
-        title2='Tic Tac Toe Game'
+        title2='CSS design App'
          />
         <ProjectLong
         url1='https://zingy-conkies-89afef.netlify.app/'
         image1={images.project5}
-        title1='Restaurant Website'
+        title1='Grilli Restaurant'
         url2='https://mellow-croissant-797345.netlify.app/'
         image2={images.project6}
-        title2='Project 6'
+        title2='Insure'
          />
         <ProjectShort
         url1='https://huddle256.netlify.app/'
         image1={images.project7}
-        title1='Project 7'
+        title1='Huddle Landing Page'
         url2='https://bright-kringle-80b9cd.netlify.app/'
         image2={images.project8}
-        title2='Project 8'
+        title2='Calculator'
          />
        </div>
        <div className="button">
-        <a href="https://www.walumyas.netlify.app/portfolio" className="btn btn-secondary" target='_blank' rel='noreferrer'>See More</a>
+        <a href="https://walumyas.netlify.app/" className="btn btn-secondary" target='_blank' rel='noreferrer'>See More</a>
        </div>
     </div>
   )
