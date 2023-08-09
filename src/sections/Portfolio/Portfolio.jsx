@@ -4,7 +4,7 @@ import { images } from '../../constants/images'
 
 function Portfolio() {
   return (
-    <div id="portfolio" className="portfolio">
+    <section id="portfolio" className="portfolio">
       <Header
       sub='Portfolio'
       title='check my wonderful work'
@@ -47,7 +47,7 @@ function Portfolio() {
        <div className="button">
         <a href="https://walumyas.netlify.app/" className="btn btn-secondary" target='_blank' rel='noreferrer'>See More</a>
        </div>
-    </div>
+    </section>
   )
 }
 

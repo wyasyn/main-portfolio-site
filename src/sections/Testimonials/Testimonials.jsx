@@ -53,7 +53,7 @@ function Testimonials() {
   }
 
   return (
-    <div id="testimonial" className="testimonial">
+    <section id="testimonial" className="testimonial">
       <Header
       sub='testimonials'
       title='what people say about me'
@@ -105,7 +105,7 @@ function Testimonials() {
             <FaArrowRight />
         </div>
        </div>
-    </div>
+    </section>
   )
 }
 

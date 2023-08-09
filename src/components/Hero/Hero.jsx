@@ -7,21 +7,21 @@ import resume from '../../assets/resume.pdf'
 
 function Hero() {
   return (
-    <div className='hero'>
-      <div className="hero-container container">
+    <section className='hero'>
+      <article className="hero-container container">
       <div className="left">
        <div className="content">
-       <div className="hero-heading">
-        <h3>
+       <h1 className="hero-heading">
+        <p className='hello'>
           Hello, I&apos;m
-        </h3>
-        <h1>
-          Yasin Walum
-        </h1>
-        <h3 className='title'>
+        </p>
+        <strong className='heading-name'>
+          Yasin Walum &nbsp;
+        </strong>
+        <p className='title'>
           front-end developer
-        </h3>
-        </div>
+        </p>
+        </h1>
         <div className="cta">
           <a href="#contact" className="btn btn-secondary">hire me <HiMail /></a>
           <a href={resume} className="btn" download='resume' >download cv <HiOutlineDownload /></a>
@@ -45,8 +45,8 @@ function Hero() {
       <div className="right">
         <img src={pic} alt="profile" title='Yasin Walum' loading='lazy' />
       </div>
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }
 

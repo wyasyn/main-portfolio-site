@@ -6,13 +6,11 @@ import { Footer } from './sections'
 function App() {
 
   return (
-    <>
       <div className="App">
-      <Navbar />
-      <Home />
-      <Footer />
-    </div>
-    </>
+        <Navbar />
+        <Home />
+        <Footer />
+      </div>
   )
 }
 

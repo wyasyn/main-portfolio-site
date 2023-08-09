@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 function Service({icon, title}) {
   return (
-    <div className="service">
+    <article className="service">
         <div className="icon">
             {icon}
         </div>
-        <h4>
+        <p>
             {title}
-        </h4>
-    </div>
+        </p>
+    </article>
   )
 }
 

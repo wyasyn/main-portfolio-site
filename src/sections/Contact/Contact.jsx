@@ -48,7 +48,7 @@ function Contact() {
         };
 
   return (
-    <div id="contact" className="contact">
+    <section id="contact" className="contact">
       <Header
       sub='contact'
       title='get in touch with me'
@@ -124,7 +124,7 @@ function Contact() {
        <div className="map">
        <div width="100%"><iframe width="100%" height="600"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kyaliwajjala,%20Wakiso+(Primates%20Code)&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
        </div>
-    </div>
+    </section>
   )
 }
 

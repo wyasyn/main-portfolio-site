@@ -34,7 +34,7 @@ function Services() {
     },
   ]
   return (
-    <div id="services" className="services">
+    <section id="services" className="services">
       <Header
       sub='service'
       title='what i do'
@@ -51,7 +51,7 @@ function Services() {
           ))
         }
        </div>
-    </div>
+    </section>
   )
 }
 

@@ -27,6 +27,23 @@
             }
         }
     }
+    .toggle {
+        font-size: 1.4rem;
+        width: 2rem;
+        aspect-ratio: 1/1;
+        background: transparent;
+        border: 1px solid var(--clr-text);
+        color: var(--clr-text);
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
     .n-list-desk {
         display: flex;
         align-items: center;

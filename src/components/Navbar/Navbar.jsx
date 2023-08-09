@@ -3,10 +3,10 @@ import { NavDesk, NavMobile } from '../../components'
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <header className="navbar">
       <NavMobile />
       <NavDesk />
-    </div>
+    </header>
   )
 }
 

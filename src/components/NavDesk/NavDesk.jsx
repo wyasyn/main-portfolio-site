@@ -1,5 +1,6 @@
 import './NavDesk.scss'
 import logo from '../../assets/logo-white-monkey.svg'
+import {MdLightMode} from 'react-icons/md'
 
 function NavDesk() {
   return (
@@ -15,6 +16,10 @@ function NavDesk() {
          ))
          }
       </div>
+      <button className="toggle">
+        <MdLightMode />
+        {/* <MdDarkMode /> */}
+      </button>
     </nav>
   )
 }

@@ -3,7 +3,7 @@ import './Stats.scss'
 function Stats() {
   return (
     <>
-    <div className="stats">
+    <article className="stats">
         <div className="info">
             <strong>105</strong>
             <small>Happy Clients</small>
@@ -16,7 +16,7 @@ function Stats() {
             <strong>25</strong>
             <small>Awards Won</small>
         </div>
-    </div>
+    </article>
     </>
   )
 }

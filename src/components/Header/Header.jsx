@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 function Header({sub, title, description}) {
   return (
-    <div className="header">
-        <h4 className='header-sub'>{sub}</h4>
+    <header className="header">
+        <p className='header-sub'>{sub}</p>
         <h2 className='header-title'>{title}</h2>
         <p className='par'>
             {description}
         </p>
-    </div>
+    </header>
   )
 }
 

@@ -1,8 +1,9 @@
 import './NavMobile.scss'
-import {FaBars, FaTimes} from 'react-icons/fa'
 import logo from '../../assets/logo-white-monkey.svg'
 import  { useState } from 'react'
 import {motion} from 'framer-motion'
+import {MdLightMode, MdOutlineClose} from 'react-icons/md'
+import {HiOutlineMenuAlt4} from 'react-icons/hi'
 
 function NavMobile() {
 
@@ -21,15 +22,19 @@ function NavMobile() {
   return (
     <>
     <nav className="n-mobile container">
+    <button className="menu">
+        {
+          click?
+          <MdOutlineClose className='icon' onClick={closeMenu} />:
+          <HiOutlineMenuAlt4 className='icon' onClick={handleClick} />
+        }
+      </button>
       <a href="/" className='logo'>
         <img src={logo} alt="logo" />
       </a>
-      <button className="menu">
-        {
-          click?
-          <FaTimes className='icon' onClick={closeMenu} />:
-          <FaBars className='icon' onClick={handleClick} />
-        }
+      <button className="toggle">
+        <MdLightMode />
+        {/* <MdDarkMode /> */}
       </button>
       {
         click && <motion.div 

@@ -6,9 +6,9 @@ import resume from '../../assets/resume.pdf'
 
 function About() {
   return (
-    <div id="about" className="about">
+    <section id="about" className="about">
       <Stats />
-      <div className="about-container container">
+      <article className="about-container container">
         <Header 
         sub='who am i'
         title='about me'
@@ -21,7 +21,7 @@ function About() {
             </div>
           </div>
           <div className="col-2">
-            <h2>Yasin Walum</h2>
+            <strong>Yasin Walum</strong>
             <h3>Front-End Developer</h3>
             <p>
               As a dedicated web developer, I strive to merge design aesthetics with functionality, crafting engaging and user-friendly websites. Whether you&apos;re seeking an expert in front-end development, back-end programming, or both, I am confident that my diverse skill set and innovative approach will captivate your interest. Join me on this journey as we explore the exciting world of web development together.
@@ -29,8 +29,8 @@ function About() {
             <a href={resume} className="btn btn-primary" download='resume' >Download CV <HiOutlineDownload /></a>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }
 

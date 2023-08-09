@@ -9,20 +9,21 @@
                 align-self: center;
                 .content {
                     .hero-heading {
-                        h3 {
+                        .hello {
                             font-size: 1.8rem;
                             color: var(--clr-text);
                             font-weight: 500;
                         }
-                        h1 {
+                        .heading-name {
                             font-size: 5rem;
                             margin: .1em 0;
                             letter-spacing: 0.2rem;
                             color: var(--clr-heading);
-                            line-height: 1.1;
+                            line-height: 1;
                         }
                         .title {
                             text-transform: uppercase;
+                            font-weight: 700;
                         }
                     }
                     .cta {

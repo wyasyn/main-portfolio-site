@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 function Skill({icon, name, overlay}) {
   return (
-    <div className="skill">
+    <article className="skill">
       <div className="icon">
         {icon}
       </div>
-      <h4 className='name'>
+      <p className='name'>
         {name}
-      </h4>
+      </p>
       <div className="overlay">
         <p>
         {overlay}
         </p>
       </div>
-    </div>
+    </article>
   )
 }
 

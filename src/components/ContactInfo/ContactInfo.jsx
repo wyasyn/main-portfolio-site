@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ContactInfo({icon, title, describe}) {
   return (
-    <div className="contact-info">
+    <article className="contact-info">
         <div className="icon">
             {icon}
         </div>
@@ -13,7 +13,7 @@ function ContactInfo({icon, title, describe}) {
                 {describe}
             </p>
         </div>
-    </div>
+    </article>
   )
 }
 

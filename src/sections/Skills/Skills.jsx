@@ -28,7 +28,7 @@ function Skills() {
     },
   ]
   return (
-   <div id="skills" className="skills">
+   <section id="skills" className="skills">
       <Header
       sub='Skills'
       title='Why choose me'
@@ -44,7 +44,7 @@ function Skills() {
           ))
         }
        </div>
-   </div>
+   </section>
   )
 }
 
