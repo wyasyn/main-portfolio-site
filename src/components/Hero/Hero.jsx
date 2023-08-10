@@ -3,9 +3,13 @@ import pic from '../../assets/profile.png'
 import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF} from 'react-icons/fa'
 import { HiOutlineDownload, HiMail } from 'react-icons/hi'
 import resume from '../../assets/resume.pdf'
+import BlobDark from '../../assets/blob.svg'
+import BlobLight from '../../assets/blob-light.svg'
+import { useTheme } from '../../ThemeContext/ThemeContext'  
 
 
 function Hero() {
+  const { theme } = useTheme()
   return (
     <section className='hero'>
       <article className="hero-container container">
@@ -43,7 +47,10 @@ function Hero() {
        </div>
       </div>
       <div className="right">
-        <img src={pic} alt="profile" title='Yasin Walum' loading='lazy' />
+        <img className='profile' src={pic} alt="profile" title='Yasin Walum' loading='lazy' />
+        {
+          theme === 'dark' ? <img className='blob' src={BlobDark} alt="blob" loading='lazy'/>:  <img className='blob' src={BlobLight} alt="blob" loading='lazy'/>
+        }
       </div>
       </article>
     </section>

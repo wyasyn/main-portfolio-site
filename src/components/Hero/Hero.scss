@@ -18,7 +18,7 @@
                             font-size: 5rem;
                             margin: .1em 0;
                             letter-spacing: 0.2rem;
-                            color: var(--clr-heading);
+                            color: var(--primary);
                             line-height: 1;
                         }
                         .title {
@@ -45,7 +45,7 @@
                         .social {
                             height: 4rem;
                             width: 4rem;
-                            border: 1px solid #4b5da9;
+                            border: 1px solid var(--primary);
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -55,7 +55,7 @@
                             -o-border-radius: 50%;
                             border-radius: 50%;
                             svg {
-                                color: #4b5da9;
+                                color: var(--primary);
                                 font-size: 1.4rem;
                             }
                             &:hover {
@@ -75,16 +75,31 @@
             }
             .right {
                 flex: 1;
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
-                background-image: url(./blob.svg);
-                background-position:center;
-                background-repeat: no-repeat;
-                background-size: 120%;
+                min-height: 54.75rem;
+                position: relative;
+                &>*{
+                    position: absolute;
+                }
+                .profile {
+                    z-index: 2;
+                    bottom: 0;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center top;
+                }
+                .blob {
+                    z-index: 1;
+                }
                 @media screen and (max-width:48rem) {
-                    img {
-                        width: 80%;
+                    .right {
+                        min-height: 20rem;
                     }
                 }
             }

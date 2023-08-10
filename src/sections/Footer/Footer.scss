@@ -22,7 +22,7 @@
             .social {
                 height: 3.2rem;
                 width: 3.2rem;
-                border: 1px solid #4b5da9;
+                border: 1px solid var(--primary);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -32,7 +32,7 @@
                 -o-border-radius: 50%;
                 border-radius: 50%;
                 svg {
-                    color: #4b5da9;
+                    color: var(--primary);
                     font-size: 1.4rem;
                 }
                 &:hover {

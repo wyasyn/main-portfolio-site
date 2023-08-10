@@ -1,15 +1,20 @@
 import './Footer.scss'
 import {FaTwitter, FaGithub, FaLinkedinIn, FaFacebookF } from 'react-icons/fa'
-import logo from '../../assets/logo-white-monkey.svg'
+import WhiteLogo from '../../assets/logo-white-monkey.svg'
+import BlackLogo from '../../assets/logo-monkey.svg'
+import { useTheme } from '../../ThemeContext/ThemeContext'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
+  const {theme} = useTheme()
   return (
     <footer className="footer">
       <div className="footer-container container">
         <div className="col-1">
         <a href="#" className='logo'>
-          <img src={logo} alt="logo" />
+        {
+          theme === 'dark' ? <img src={WhiteLogo} alt="logo" />:  <img src={BlackLogo} alt="logo" />
+        }
         </a>
             <small>
               &copy; {currentYear} Yasin Walum.

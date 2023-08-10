@@ -1,9 +1,11 @@
 import './NavMobile.scss'
-import logo from '../../assets/logo-white-monkey.svg'
+import WhiteLogo from '../../assets/logo-white-monkey.svg'
+import BlackLogo from '../../assets/logo-monkey.svg'
 import  { useState } from 'react'
 import {motion} from 'framer-motion'
-import {MdLightMode, MdOutlineClose} from 'react-icons/md'
+import {MdDarkMode, MdLightMode, MdOutlineClose} from 'react-icons/md'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
+import { useTheme } from '../../ThemeContext/ThemeContext'
 
 function NavMobile() {
 
@@ -18,6 +20,8 @@ function NavMobile() {
     setClick(false);
   }
 
+  const { theme, toggleTheme } = useTheme()
+
 
   return (
     <>
@@ -30,11 +34,14 @@ function NavMobile() {
         }
       </button>
       <a href="/" className='logo'>
-        <img src={logo} alt="logo" />
+      {
+          theme === 'dark' ? <img src={WhiteLogo} alt="logo" />:  <img src={BlackLogo} alt="logo" />
+      }
       </a>
-      <button className="toggle">
-        <MdLightMode />
-        {/* <MdDarkMode /> */}
+      <button className="toggle" onClick={toggleTheme} title={ theme === 'dark' ? 'Change to Light Mode' : 'Change to Dark Mode' }>
+        {
+          theme === 'dark' ? <MdLightMode /> :  <MdDarkMode />
+        }
       </button>
       {
         click && <motion.div 
