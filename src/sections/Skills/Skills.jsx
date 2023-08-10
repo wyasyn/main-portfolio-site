@@ -2,7 +2,7 @@ import './Skills.scss'
 import {Header, Skill} from '../../components'
 import { FaReact, FaGithub } from 'react-icons/fa'
 import { GiPencilBrush } from 'react-icons/gi'
-import { GrCss3 } from 'react-icons/gr'
+import { BsPaletteFill } from 'react-icons/bs'
 
 function Skills() {
   const Skillsdata =[
@@ -17,7 +17,7 @@ function Skills() {
       overlay:'Photoshop, Illustrator, Figma, Adobe XD and others'
     },
     {
-      icon: <GrCss3 />,
+      icon: <BsPaletteFill />,
       name:'Responsiveness',
       overlay:'Websites look and function well on various devices and screen sizes'
     },

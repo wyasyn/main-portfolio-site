@@ -1,22 +1,16 @@
 // ThemeContext.js
-import { createContext, useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('dark');
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme){
-      setTheme(currentTheme)
-    }
-  },[]);
+export function ThemeProvider({ children }) {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'dark' ? 'light' : 'dark'));
-    localStorage.setItem('theme', theme)
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
   return (
@@ -24,11 +18,11 @@ export const ThemeProvider = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   );
-};
+}
 
-export const useTheme = () => {
+export function useTheme() {
   return useContext(ThemeContext);
-};
+}
 
 
 
