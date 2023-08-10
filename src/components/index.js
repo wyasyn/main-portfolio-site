@@ -10,3 +10,4 @@ export {default as ProjectLong } from "./ProjectLong/ProjectLong";
 export {default as ProjectShort } from "./ProjectShort/ProjectShort";
 export {default as ContactInfo } from "./ContactInfo/ContactInfo";
 export {default as Testimony } from "./Testimony/Testimony";
+export {default as BlogNav } from "./BlogNav/BlogNav";

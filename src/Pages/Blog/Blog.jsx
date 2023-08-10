@@ -1,8 +1,11 @@
 import './Blog.scss'
+import { BlogNav } from '../../components'
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <main className="blog">
+      <BlogNav />
+    </main>
   )
 }
 
