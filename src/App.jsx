@@ -1,8 +1,7 @@
 import './App.scss'
-import { Home } from './Pages'
-import { Navbar } from './components'
-import { Footer } from './sections'
 import { useTheme } from './ThemeContext/ThemeContext'
+import {Blog, MainPage, Projects} from './Pages'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
@@ -10,9 +9,11 @@ function App() {
 
   return (
       <div id='home' className={`App ${theme}`}>
-        <Navbar />
-        <Home />
-        <Footer />
+        <Routes>
+          <Route path='/' element={<MainPage />} />
+          <Route path='blog' element={ <Blog /> } />
+          <Route path='projects' element={ <Projects /> } />
+        </Routes>
       </div>
   )
 }
