@@ -9,11 +9,11 @@ export const BlogTitle = {
 
 export const BlogDataMinor = [
     {
-        title:"The Importance of Web Design in 2023",
+        title:"Role of AI in frond-end development",
         author:"Yasin walum",
         image:images.Blog1,
-        article:"web design is more important than ever before. With the rise of mobile devices and social media, businesses need to have websites that are responsive and easy to use on all platforms. They also need to be visually appealing and engaging, in order to capture the attention of potential customers.",
-        link:"blog"
+        article:"Front-end developers are not at immediate risk of being replaced by AI, but the role of front-end development is evolving alongside advancements in technology, including AI and automation",
+        link:"https://www.linkedin.com/pulse/front-end-developers-risk-best-replaced-ai-yasin-walum"
     },
     {
         title:"The Importance of a Website for Your Business",
