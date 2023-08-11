@@ -16,11 +16,11 @@ export const BlogDataMinor = [
         link:"https://www.linkedin.com/pulse/front-end-developers-risk-best-replaced-ai-yasin-walum"
     },
     {
-        title:"The Importance of a Website for Your Business",
+        title:"Why you need a Website for Your Business",
         author:"Yasin walum",
         image:images.Blog2,
-        article:"If you don't have a website for your business, you're missing out on a lot of potential opportunities. A website can help you to reach a wider audience, build brand awareness, generate leads, make sales, provide customer service, and stay competitive. If you're serious about growing your business, you need to have a website.",
-        link:"blog"
+        article:"A website is a crucial tool for businesses in today's digital age. Its importance stems from the fact that it serves as a virtual storefront and a central hub for your online presence",
+        link:"https://www.linkedin.com/pulse/why-you-need-website-your-business-yasin-walum"
     },
     {
         title:"How the Internet Is Changing the World",
