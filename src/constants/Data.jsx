@@ -23,10 +23,10 @@ export const BlogDataMinor = [
         link:"https://www.linkedin.com/pulse/why-you-need-website-your-business-yasin-walum"
     },
     {
-        title:"How the Internet Is Changing the World",
+        title:"Importance of Responsive Design:",
         author:"Yasin walum",
         image:images.Blog3,
-        article:"The web is growing at an exponential rate. In 1993, there were only 1 million websites. Today, there are over 1 billion websites. And that number is only going to keep growing. The growth of the web is having a profound impact on the world. It is changing the way we communicate, the way we shop, the way we learn, and the way we do business.",
-        link:"blog"
+        article:"Responsive design is crucial in today's digital landscape where users access websites and applications from a wide range of devices with varying screen sizes and orientations",
+        link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
     },
 ]
