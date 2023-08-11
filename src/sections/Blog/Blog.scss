@@ -1,0 +1,14 @@
+.blog {
+    background-color: var(--bg500);
+    padding-bottom: 5em;
+    .blog-articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding-bottom: 3.5em;
+    }
+    .blog-button {
+        display: grid;
+        place-items: center;
+    }
+}

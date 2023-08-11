@@ -24,7 +24,7 @@ function NavDesk() {
       transition={{ duration: 1, ease: 'easeInOut' }} 
       className="n-list-desk"
       >
-      { ["home", "about", "services", "portfolio", "testimonial", "contact" ].map((item, index) => (
+      { ["home", "about", "services", "portfolio", "testimonial", "blog", "contact" ].map((item, index) => (
            <a href={`#${item}`} key={index} className='n-link'>
              {item}
            </a>

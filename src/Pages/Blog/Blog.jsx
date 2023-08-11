@@ -3,7 +3,7 @@ import { BlogNav } from '../../components'
 
 function Blog() {
   return (
-    <main className="blog">
+    <main className="blog-page">
       <BlogNav />
     </main>
   )

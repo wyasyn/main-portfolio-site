@@ -49,7 +49,7 @@ function NavMobile() {
         transition={{duration:0.6, ease: 'easeInOut'}}
          className="n-list-mobile"
          >
-        { ["home", "about", "services", "portfolio", "testimonial", "contact" ].map((item, index) => (
+        { ["home", "about", "services", "portfolio", "testimonial", "blog", "contact" ].map((item, index) => (
            <a href={`#${item}`} key={index} className='n-link' onClick={closeMenu}>
              {item}
            </a>
