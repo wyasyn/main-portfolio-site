@@ -12,3 +12,4 @@ export {default as ContactInfo } from "./ContactInfo/ContactInfo";
 export {default as Testimony } from "./Testimony/Testimony";
 export {default as BlogNav } from "./BlogNav/BlogNav";
 export {default as BlogArticle } from "./BlogArticle/BlogArticle";
+export {default as Author } from "./Author/Author";

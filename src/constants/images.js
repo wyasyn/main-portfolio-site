@@ -14,6 +14,8 @@ import profile6 from "../assets/profile6.jpg";
 import Blog1 from "../assets/blog1.jpg"
 import Blog2 from "../assets/blog2.jpg"
 import Blog3 from "../assets/blog3.jpg"
+import BlogMain from "../assets/bh.jpg"
+import Me from "../assets/blogMe.jpg"
 
 export const images = {
     project1,
@@ -31,5 +33,7 @@ export const images = {
     profile6,
     Blog1,
     Blog2,
-    Blog3
+    Blog3,
+    BlogMain,
+    Me,
 }

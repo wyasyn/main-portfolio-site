@@ -43,6 +43,10 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        &:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
     }
     .n-list-desk {
         display: flex;

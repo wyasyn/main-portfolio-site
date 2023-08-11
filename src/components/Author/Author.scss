@@ -1,0 +1,29 @@
+.blog-author {
+    background-color: var(--clr-text);
+    color: var(--bg400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+       -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border-radius: 2rem;
+    padding: 0.3em;
+    .pic {
+        overflow: hidden;
+        width: 3.5rem;
+        aspect-ratio: 1/1;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+    }
+    .name {
+        padding-right: 0.3rem;
+    }
+}
