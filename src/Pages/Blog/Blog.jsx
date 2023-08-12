@@ -1,24 +1,13 @@
 import './Blog.scss'
-import { Author, BlogNav } from '../../components'
+import { Author, BlogCard, BlogNav } from '../../components'
 import {images} from '../../constants/images'
+import {BlogDataMajor} from '../../constants/Data'
+import {Footer} from '../../sections'
 
 function Blog() {
   return (
     <main className="blog-page">
       <BlogNav />
-      <header className='blog-header'>
-        <div className="blog-intro container">
-          <h1 className='blog-heading'>
-            Web Development and Design
-          </h1>
-          <p className='blog-par'>
-          Explore captivating insights, practical tips, and personal anecdotes that illuminate the path in web development.
-          </p>
-          <h2 className='blog-main-title'>
-            Articles
-          </h2>
-        </div>
-      </header>
       <div className="blog-hero container"  >
         <img className='bg-image' src={images.BlogMain} alt="ai" />
         <div className="blog-overlay"></div>
@@ -36,6 +25,17 @@ function Blog() {
         </div>
         </div>
       </div>
+      <section className="blog__content container">
+        {
+          BlogDataMajor.map((data,index) => (
+            <BlogCard
+            key={index}
+            {...data}
+             />
+          ))
+        }
+      </section>
+      <Footer />
     </main>
   )
 }

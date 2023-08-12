@@ -16,6 +16,15 @@ import Blog2 from "../assets/blog2.jpg"
 import Blog3 from "../assets/blog3.jpg"
 import BlogMain from "../assets/bh.jpg"
 import Me from "../assets/blogMe.jpg"
+import fblog1 from "../assets/fb1.jpg"
+import fblog2 from "../assets/fb2.jpg"
+import fblog3 from "../assets/fb3.jpg"
+import fblog4 from "../assets/fb4.jpg"
+import fblog5 from "../assets/fb5.jpg"
+import fblog6 from "../assets/fb6.jpg"
+import fblog7 from "../assets/fb7.jpg"
+import fblog8 from "../assets/fb8.jpg"
+
 
 export const images = {
     project1,
@@ -36,4 +45,12 @@ export const images = {
     Blog3,
     BlogMain,
     Me,
+    fblog1,
+    fblog2,
+    fblog3,
+    fblog4,
+    fblog5,
+    fblog6,
+    fblog7,
+    fblog8,
 }

@@ -1,0 +1,50 @@
+.blog__card {
+    max-width: 20rem;
+    &-photo {
+        width: 100%;
+        height: 22rem;
+        position: relative;
+        -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        -ms-border-radius: 1.5rem;
+        -o-border-radius: 1.5rem;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        .blog-pic {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            inset: 0;
+        }
+        .author-name {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%) ;
+            -ms-transform: translateX(-50%) ;
+            -o-transform: translateX(-50%) ;
+            transform: translateX(-50%) ;
+            .blog-author {
+                width: 12rem;
+            }
+        }
+    }
+    &-content {
+        .blog__card-heading {
+            color: var(--clr-heading);
+            margin-block: 0.5em;
+            font-size: 1.4rem;
+            text-wrap: balance;
+        }
+        .blog__card-summary {
+            margin-bottom: 0.5em;
+            font-size: 1.1rem;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 1.2em;
+        }
+    }
+}
