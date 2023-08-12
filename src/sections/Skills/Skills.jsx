@@ -3,6 +3,7 @@ import {Header, Skill} from '../../components'
 import { FaReact, FaGithub } from 'react-icons/fa'
 import { GiPencilBrush } from 'react-icons/gi'
 import { BsPaletteFill } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 
 function Skills() {
   const Skillsdata =[
@@ -34,7 +35,10 @@ function Skills() {
       title='Why choose me'
       description='I thrive on transforming ideas and designs into interactive and user-friendly web experiences. From responsive layouts to intuitive user interfaces, I take pride in crafting seamless, visually appealing, and engaging websites.'
        />
-       <div className="skills-content">
+       <motion.div
+          whileInView={{ y:[50,0] }}
+          transition={{ duration: 1, ease:'easeInOut' }}
+        className="skills-content">
         {
           Skillsdata.map((item,index)=>(
             <Skill 
@@ -43,7 +47,7 @@ function Skills() {
              />
           ))
         }
-       </div>
+       </motion.div>
    </section>
   )
 }

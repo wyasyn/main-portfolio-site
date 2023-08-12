@@ -1,6 +1,8 @@
 import './Portfolio.scss'
 import { Header, ProjectLong, ProjectShort } from '../../components'
 import { images } from '../../constants/images'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 function Portfolio() {
   return (
@@ -10,7 +12,10 @@ function Portfolio() {
       title='check my wonderful work'
       description=' I am excited to showcase my skills and share my journey as I continue to explore and innovate in the ever-evolving world of front-end development.'
        />
-       <div className="portfolio-container container">
+       <motion.div
+          whileInView={{ y: [50,0] }}
+          transition={{ duration:1, ease: 'easeInOut' }}
+        className="portfolio-container container">
         <ProjectLong
         url1='https://yasyn.netlify.app'
         image1={images.project1}
@@ -43,9 +48,9 @@ function Portfolio() {
         image2={images.project8}
         title2='Calculator'
          />
-       </div>
+       </motion.div>
        <div className="button">
-        <a href="https://walumyas.netlify.app/" className="btn btn-secondary" target='_blank' rel='noreferrer'>See More</a>
+        <Link to='projects' className="btn btn-secondary" >See More</Link>
        </div>
     </section>
   )

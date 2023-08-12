@@ -3,6 +3,7 @@ import { Author, BlogCard, BlogNav } from '../../components'
 import {images} from '../../constants/images'
 import {BlogDataMajor} from '../../constants/Data'
 import {Footer} from '../../sections'
+import { Link } from 'react-router-dom'
 
 function Blog() {
   return (
@@ -20,7 +21,7 @@ function Blog() {
           Artificial Intelligence Beyound Imagination
         </h2>
         <p>
-        Responsive design is crucial in today&apos;s digital landscape where users access websites and applications from a wide range of devices with varying screen sizes and orientations.
+        Explore captivating insights, practical tips, and personal anecdotes that illuminate the path in web development
         </p>
         </div>
         </div>
@@ -35,6 +36,9 @@ function Blog() {
           ))
         }
       </section>
+      <div className="button">
+        <Link to="/" className="btn btn-primary">Home Page</Link>
+       </div>
       <Footer />
     </main>
   )

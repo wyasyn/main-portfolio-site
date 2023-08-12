@@ -3,6 +3,7 @@ import { Header, Testimony } from '../../components'
 import { images } from '../../constants/images'
 import { useState } from 'react'
 import { FaArrowLeft, FaArrowRight, FaCircle } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 function Testimonials() {
 
@@ -61,7 +62,10 @@ function Testimonials() {
        />
 
        <div className="testimonial-container container">
-        <div className="content" >
+        <motion.div
+          whileInView={{ y: [50,0] }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+         className="content" >
           {
             TestimonialData.map((data, index) => (
               <div 
@@ -76,7 +80,7 @@ function Testimonials() {
               </div>
             ))
           }
-        </div>
+        </motion.div>
         <div className="arrow-left" 
         onClick={()=>{
           updateIndex(activeIndex - 1)

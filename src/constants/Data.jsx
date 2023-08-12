@@ -88,3 +88,61 @@ export const BlogDataMajor = [
         link:"https://www.linkedin.com/pulse/importance-responsive-design-yasin-walum"
     },
 ]
+export const Works = [
+    {
+        title:"Personal Portfolio",
+        author:"Yasin walum",
+        image:images.project1,
+        article:"Great Show of website layout",
+        link:"https://yasyn.netlify.app"
+    },
+    {
+        title:"Blogr Landing Page",
+        author:"Yasin walum",
+        image:images.project2,
+        article:"Contains beauty and color choice",
+        link:"https://blogr256.netlify.app/"
+    },
+    {
+        title:"Loop Studio",
+        author:"Yasin walum",
+        image:images.project3,
+        article:"I love the design and color psychology",
+        link:"https://loopstudio256.netlify.app/"
+    },
+    {
+        title:"CSS design App",
+        author:"Yasin walum",
+        image:images.project4,
+        article:"Display of CSS skills",
+        link:"https://cerulean-scone-e8159c.netlify.app/"
+    },
+    {
+        title:"Grilli Restaurant",
+        author:"Yasin walum",
+        image:images.project5,
+        article:"Lovely dark theme and micro-interactions",
+        link:"https://zingy-conkies-89afef.netlify.app/"
+    },
+    {
+        title:"Insure",
+        author:"Yasin walum",
+        image:images.project6,
+        article:"Insurance company landing page",
+        link:"https://mellow-croissant-797345.netlify.app/"
+    },
+    {
+        title:"Huddle Landing Pa",
+        author:"Yasin walum",
+        image:images.project7,
+        article:"grid skills displayed here",
+        link:"https://huddle256.netlify.app/"
+    },
+    {
+        title:"Calculator",
+        author:"Yasin walum",
+        image:images.project8,
+        article:"functioning Calculator in JavaScript",
+        link:"https://bright-kringle-80b9cd.netlify.app/"
+    },
+]

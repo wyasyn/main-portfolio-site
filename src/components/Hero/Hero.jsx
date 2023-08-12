@@ -6,6 +6,7 @@ import resume from '../../assets/resume.pdf'
 import BlobDark from '../../assets/blob.svg'
 import BlobLight from '../../assets/blob-light.svg'
 import { useTheme } from '../../ThemeContext/ThemeContext'  
+import { motion } from 'framer-motion'
 
 
 function Hero() {
@@ -15,17 +16,22 @@ function Hero() {
       <article className="hero-container container">
       <div className="left">
        <div className="content">
-       <h1 className="hero-heading">
+       <motion.h1 
+          whileInView={{x: [-50,0]}}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+       className="hero-heading">
         <p className='hello'>
           Hello, I&apos;m
         </p>
-        <strong className='heading-name'>
+        <strong
+         className='heading-name'
+         >
           Yasin Walum &nbsp;
         </strong>
         <p className='title'>
           front-end developer
         </p>
-        </h1>
+        </motion.h1>
         <div className="cta">
           <a href="#contact" className="btn btn-secondary">hire me <HiMail /></a>
           <a href={resume} className="btn" download='resume' >download cv <HiOutlineDownload /></a>
@@ -47,9 +53,20 @@ function Hero() {
        </div>
       </div>
       <div className="right">
-        <img className='profile' src={pic} alt="profile" title='Yasin Walum' loading='lazy' />
+        <motion.img
+        whileInView={{ opacity: [0.5,1] }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+         className='profile' src={pic} alt="profile" title='Yasin Walum' loading='lazy' />
         {
-          theme === 'dark' ? <img className='blob' src={BlobDark} alt="blob" loading='lazy'/>:  <img className='blob' src={BlobLight} alt="blob" loading='lazy'/>
+          theme === 'dark' ? 
+          <motion.img 
+          whileInView={{ scale: [0.3,1], opacity: [0.5,1] }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className='blob' src={BlobDark} alt="blob" loading='lazy'/>:  
+          <motion.img
+          whileInView={{ scale: [0.3,1], opacity: [0.5,1] }}
+          transition={{ duration: 1, ease: 'easeInOut' }} 
+          className='blob' src={BlobLight} alt="blob" loading='lazy'/>
         }
       </div>
       </article>

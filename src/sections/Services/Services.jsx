@@ -5,6 +5,7 @@ import {BsPeopleFill, BsSearch } from 'react-icons/bs'
 import {LuMonitorSmartphone } from 'react-icons/lu'
 import {MdComputer } from 'react-icons/md'
 import {BiRefresh } from 'react-icons/bi'
+import { motion } from 'framer-motion'
 
 function Services() {
   const ServicesData = [
@@ -41,7 +42,10 @@ function Services() {
       description='I am passionate about crafting captivating digital experiences that leave a lasting impression. With a keen eye for design and a deep understanding of the latest web technologies.'
        />
 
-       <div className="service-content container">
+       <motion.div 
+       whileInView={{y: [50,0]}}
+       transition={{ duration: 1, ease: 'easeInOut' }}
+       className="service-content container">
         {
           ServicesData.map((item,index)=>(
             <Service
@@ -50,7 +54,7 @@ function Services() {
              />
           ))
         }
-       </div>
+       </motion.div>
     </section>
   )
 }
