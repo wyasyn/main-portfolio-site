@@ -3,6 +3,7 @@ import { Author, BlogCard, BlogNav } from '../../components'
 import {images} from '../../constants/images'
 import {Works} from '../../constants/Data'
 import {Footer} from '../../sections'
+import { Link } from 'react-router-dom'
 
 function Projects() {
   return (
@@ -36,9 +37,9 @@ function Projects() {
       }
     </section>
     <div className="button">
-      <a href='/' className="btn btn-primary" >
+      <Link to='/' className="btn btn-primary" >
           Home Page
-      </a>
+      </Link>
     </div>
     <Footer />
   </main>

@@ -2,6 +2,7 @@ import './Portfolio.scss'
 import { Header, ProjectLong, ProjectShort } from '../../components'
 import { images } from '../../constants/images'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Portfolio() {
   return (
@@ -49,7 +50,7 @@ function Portfolio() {
          />
        </motion.div>
        <div className="button">
-        <a href='/projects' className="btn btn-secondary" >See More</a>
+        <Link to='projects' className="btn btn-secondary" >See More</Link>
        </div>
     </section>
   )

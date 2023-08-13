@@ -2,6 +2,7 @@ import './Blog.scss'
 import {BlogArticle, Header} from '../../components'
 import { BlogDataMinor, BlogTitle } from '../../constants/Data'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Blog() {
   return (
@@ -25,9 +26,9 @@ function Blog() {
               }
             </motion.div>
             <div className="blog-button">
-              <a href='/blog' className='btn primary' >
+              <Link to='blog' className='btn primary' >
                 More
-              </a>
+              </Link>
             </div>
         </div>
     </section>
