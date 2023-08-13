@@ -1,7 +1,6 @@
 import './Blog.scss'
 import {BlogArticle, Header} from '../../components'
 import { BlogDataMinor, BlogTitle } from '../../constants/Data'
-import {Link} from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 function Blog() {
@@ -26,9 +25,9 @@ function Blog() {
               }
             </motion.div>
             <div className="blog-button">
-              <Link to='blog' className='btn primary' >
+              <a href='/blog' className='btn primary' >
                 More
-              </Link>
+              </a>
             </div>
         </div>
     </section>

@@ -3,7 +3,6 @@ import { Author, BlogCard, BlogNav } from '../../components'
 import {images} from '../../constants/images'
 import {BlogDataMajor} from '../../constants/Data'
 import {Footer} from '../../sections'
-import { Link } from 'react-router-dom'
 
 function Blog() {
   return (
@@ -37,7 +36,7 @@ function Blog() {
         }
       </section>
       <div className="button">
-        <Link to="/" className="btn btn-primary">Home Page</Link>
+        <a href="/" className="btn btn-primary">Home Page</a>
        </div>
       <Footer />
     </main>
