@@ -1,0 +1,10 @@
+.btn-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: var(--primary);
+}
