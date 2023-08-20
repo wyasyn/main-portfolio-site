@@ -139,10 +139,10 @@ export const Works = [
         link:"https://huddle256.netlify.app/"
     },
     {
-        title:"Calculator",
+        title:"Nike",
         author:"Yasin walum",
         image:images.project8,
-        article:"functioning Calculator in JavaScript",
-        link:"https://bright-kringle-80b9cd.netlify.app/"
+        article:"Nike Landing page",
+        link:"https://gleeful-longma-0c7fd6.netlify.app/"
     },
 ]
