@@ -28,9 +28,9 @@ function Portfolio() {
         url1='https://loopstudio256.netlify.app/'
         image1={images.project3}
         title1='Loop Studio'
-        url2='https://cerulean-scone-e8159c.netlify.app/'
+        url2='https://rahstudio.netlify.app/'
         image2={images.project4}
-        title2='CSS design App'
+        title2='RahStudio'
          />
         <ProjectLong
         url1='https://zingy-conkies-89afef.netlify.app/'
@@ -44,9 +44,9 @@ function Portfolio() {
         url1='https://huddle256.netlify.app/'
         image1={images.project7}
         title1='Huddle Landing Page'
-        url2='https://bright-kringle-80b9cd.netlify.app/'
+        url2='https://gleeful-longma-0c7fd6.netlify.app/'
         image2={images.project8}
-        title2='Calculator'
+        title2='Nike landing Page'
          />
        </motion.div>
        <div className="button">

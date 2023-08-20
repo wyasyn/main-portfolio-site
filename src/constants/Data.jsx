@@ -111,11 +111,11 @@ export const Works = [
         link:"https://loopstudio256.netlify.app/"
     },
     {
-        title:"CSS design App",
+        title:"RahStduio",
         author:"Yasin walum",
         image:images.project4,
-        article:"Display of CSS skills",
-        link:"https://cerulean-scone-e8159c.netlify.app/"
+        article:"RahStudio Landing Page",
+        link:"https://rahstudio.netlify.app/"
     },
     {
         title:"Grilli Restaurant",
